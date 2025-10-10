@@ -1,0 +1,15 @@
+body{
+    background-color: rgb(60, 54, 102);
+}
+
+article{
+    background-color: rgb(171, 224, 255);
+}
+
+.estilos--internos{
+    background-color: rgb(255, 219, 251);
+}
+
+#encabezado{
+    color:rgb(188, 168, 243)
+}
