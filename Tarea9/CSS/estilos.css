@@ -1,0 +1,51 @@
+#encabezado{
+    color:aqua;
+    background-color: rgb(111, 25, 191);
+}
+
+.fondo--imagen{
+    /*Background-image: permite agregar imagenes como fondo de un contenedor o elemento HTML,
+    también se puede agregar gradientes*/
+    background-image: radial-gradient(ellipse, rgba(159, 245, 166, 0.408), rgba(141, 177, 243, 0.236)), url(../imagenes/btsfesta2.jpg);
+    
+    /*background-size(cover, contain y width(px)-height(px))
+    especificar el tamño de la imagen de fondo*/
+    background-size: contain;
+
+/*background-repeat(repeat, repeat-x, repeat-y, y no repeat)
+Aplica cuando la imagen es mas pequeña que su contenedor*/
+
+background-repeat: no-repeat;
+
+/*background-position(top, bottom, left, right y center)
+establece la posicion inicial de la imagen en su contenedor*/
+
+background-position: center;
+
+/*background-attachment (scroll y fixed)
+se utiliza para que la imagen se quede fija en su contenedor*/
+
+background-attachment: fixed;
+
+/*Propiedades del contenedor principal*/
+
+
+height: 950px;
+width: 1000px;
+color:blueviolet;
+border: 2px solid palevioletred;
+}
+
+.fondo--imagen1{
+    /*background: (image) (position) / (size) (repeat) (attachment) (color)*/
+    background: url(../imagenes/bts-membersc.jpg) center / contain no-repeat scroll rgb(237, 181, 208);
+    
+    
+    
+    /*Propiedades del contenedor principal*/
+    height: 950px;
+    width: 1000px;
+    color:rgb(229, 202, 157);
+    border: 2px solid rgb(94, 97, 152);
+
+}
