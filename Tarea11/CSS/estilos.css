@@ -1,0 +1,77 @@
+/*Selectro HTML*/
+html{
+    font-size: 62.5%; /*10px*/
+}
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to bottom, rgb(2, 119, 189), rgb(131, 196, 243));
+    color: rgb(189, 247, 255);
+}
+/*Orden para los estilos de los estados en los enlaces
+(LVFHA)
+*/
+
+a:link{
+    color: rgb(8, 69, 113);
+}
+
+a:visited{
+    color: rgb(20, 233, 244);
+}
+
+a:focus{
+    color: rgb(20, 31, 239);
+    background-color: rgb(213, 233, 252);
+    border: 0.3rem  solid rgb(28, 215, 240);
+}
+
+a:hover{
+    color: rgb(186, 219, 219);
+    background-color: rgb(12, 41, 94);
+    border: 0.3rem  solid rgb(118, 234, 250);
+}
+
+a:active{
+    color: rgb(51, 78, 128); 
+    background-color: rgb(181, 218, 252);
+    border: 0.3rem  solid goldenrod;
+}
+
+#encabezado{
+    font-size: 2rem;    border: 5px solid rgb(130, 199, 242);
+}
+
+#encabezado h1{
+    font-size: 2em; /*40px*/
+    text-align: center;
+}
+/*rem es medida relativa segun lo establecio en HTML*/
+.enlaces{
+    border: 0.1rem solid rgb(25, 66, 171);
+    font-size:  1.5rem; /*15px*/
+}
+
+.estados-enlaces h2{
+    font-size: 2em; /*30px*/
+    text-align: center;
+    border: 0.2em dotted rgb(41, 120, 217);
+}
+.estados-enlaces ul{
+    border: 0.1em solid rgb(28, 81, 128);
+    padding-left: 0.5cm;
+}
+.estados-enlaces ul li{
+    border: 0.1em solid rgb(200, 234, 242);
+    /*list-style-type (disc, decimal, circle, square, lower-roman, 
+    lower-alpha, upper-aplha, none)*/
+    /* list-style-type: upper-roman; */
+    list-style-image: url('https://edube.org/uploads/media/default/0001/04/oedg_icon_regular.png');
+    /*(inside y outside)*/
+    list-style-position: inside;
+    margin: 0.4rem;
+    padding: 0.3rem;
+    line-height: 1.5;    
+}
