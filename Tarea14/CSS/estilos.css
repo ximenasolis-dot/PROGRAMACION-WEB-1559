@@ -1,0 +1,41 @@
+html{
+    font-size: 60.5%
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.contenedor--flotante{
+    padding: 0.5em;
+    border: 0.5em dashed rgb(131, 116, 238);
+}
+
+.contenedor--flotante img{
+    width: 15%;
+    height: 15%;
+    float: inline-end;
+}
+
+.contenedor--flotante p{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align: justify;
+    font-size: 4.5em;
+}
+
+/*flotantes: va a ser que el texto flote por la imagen*/
+/*consulta de medios para responsividad*/
+
+/*Consultas de medios o Medias Queries
+Sirven para definir estilos a elementos HTML, según el tamaño de la pantalla
+del dispositivo usado, gracias a esto, se nos proporciona una herramienta para la creación 
+de diseños web responsivos y adaptables. 
+*/
+
+@media sreen and (max-width: 300px){
+        .contenedor--flotante p{
+            font-size: 0.2em;
+    }
+}
