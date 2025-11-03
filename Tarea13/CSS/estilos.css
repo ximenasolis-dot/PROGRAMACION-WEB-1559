@@ -1,0 +1,43 @@
+html{
+    font-size: 85.5%;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.contenedor--tabla{
+    border: 0.1em dashed rgb(138, 182, 134);
+    padding: 0.2em;
+    /*le va a decir que va a pasar cuando se desborde del contenedor*/
+    overflow-x: scroll;
+}
+
+.tabla--alumnos{
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 40em; /*300px*/
+}
+
+.tabla--alumnos th, td{
+    border: 0.1em solid rgb(89, 129, 92) ;
+    text-align: center;
+    padding: 0.2em;
+}
+
+.tabla--alumnos th{
+    background-color: rgb(108, 150, 110);
+    color: rgb(252, 254, 252);
+}
+
+/*para que cuando pasemos por los nombres se marque color*/
+.tabla--alumnos tr:hover{
+    background-color: rgb(126, 161, 127);
+}
+
+/*para que las filas pares se resalten, como estilo cebra*/
+.tabla--alumnos tr:nth-child(even){
+    background-color: rgb(179, 211, 181);
+}
