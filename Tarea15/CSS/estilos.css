@@ -1,0 +1,119 @@
+html{
+    font-size: 65.5%;
+
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#encabezado{
+    background-color: rgb(36, 49, 113);
+    color: rgb(251, 251, 253);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    padding: 1em;
+    flex-wrap: wrap;
+    margin-bottom: 3em;
+}
+
+#encabezado img{
+ align-items: flex-start;
+}
+
+#encabezado h1{
+    font-size: 4.5em;
+}
+
+#encabezado nav{
+    border: .2em solid rgb(168, 201, 251);
+}
+
+#encabezado ul{
+    border: 0.2em solid rgb(168, 201, 251);
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+}
+
+#encabezado ul li{
+    margin: 0.4em;
+}
+
+#encabezado ul li a{
+    color: white;
+}
+
+img{
+    height: 13em;
+    width: 13em;
+}
+
+
+.contenedor--flexible{
+    /* border: 0.5em  rgb(129, 110, 110); */
+    padding: 2em;
+    display: flex;
+    /* height: 30em; */
+    /* width: 30em; */
+    /*flex-direction (row, column, row-reverse, column-reverse)*/
+    flex-direction: row;
+    /*justify-content (flex-start, flex-end, centrer, space-between, space-around, space-evenly)-MAIN-AXIS(EJES-X)*/
+    justify-content: space-evenly;
+    /*align-items (flex-start, flex-end, center, strech, baseline) transveral*/
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contenedor--flexible div{
+    background-color: rgb(184, 37, 37);
+    margin: 1em;
+    border: 0.5em solid rgb(100, 19, 19);
+    height: 10em;
+    width: 30em;
+}
+/*Propiedadezs flex para objetos flexibles*/
+.objeto1{
+    /*flex-grow: 2;*/
+    order: 1;
+    
+}
+
+.objeto2{
+    /*flex-shrink: 0; */
+}
+
+.objeto3{
+    /* flex-grow: 1; */
+    order: -1;
+}
+
+.objeto4{
+    order: -2;
+}
+
+@media screen and (max-widt: 350px){
+    #encabezado ul{
+    border: 0.1em solid rgb(54, 99, 179);
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    font-size: 1em;
+}
+
+    #encabezado h1{
+        font-size: 2.5em;
+    }
+
+    #encabezado img{
+        width: 18%;
+        height: 18%;
+    }
+}
