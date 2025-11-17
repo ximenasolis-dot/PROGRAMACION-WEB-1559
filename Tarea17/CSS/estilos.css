@@ -1,0 +1,65 @@
+html{
+    font-size: 75.5%;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-image: radial-gradient(ellipse, rgb(193, 196, 47), rgb(248, 250, 162));
+    background-repeat: no-repeat;
+}
+
+.contenedor-grid{
+    color: white;
+    border: 0.3em solid rgb(166, 168, 49);
+    padding: 0.2em;
+    /*Convertir el contenedor en cuadricula*/
+    display: grid;
+    width: 30em;
+    height: 30em;
+
+    /*se declaran las columnas (tamaño) de la cuadricula
+    Aceptan valores fijos, relativos, porcentajes, auto, y se puede utilizar fr para 
+    definir una fraccion del espacio disponible*/
+    grid-template-columns: 5em 5em 5em ;
+    grid-template-rows: 15em 10em;
+    /*Alinear items en la fila (eje en linea) (start, end, center, stretch)*/
+    justify-items: center;
+    /*Alinear items en la fila (eje en columna) (start, end, center, stretch)*/
+    align-items: center;
+    /*shorthand: place-items: stretch stretch
+    Alinear la cuadricula a lo largo del eje en linea (fila)
+    (start, end, center, stretch, space-between, space-around, y space }-evenly)*/
+    justify-content: start ;
+     /*Alinear la cuadricula a lo largo del eje en linea (columna)
+    (start, end, center, stretch, space-between, space-around, y space }-evenly)*/
+    align-content: space-between;
+    gap: 5em;
+
+}
+
+.objeto-grid{
+    background-color: rgb(193, 196, 47);
+    border: 0.2em dashed rgb(166, 168, 49);
+}
+
+.contenedor-grid-1{
+    color: white;
+    border: 0.3em solid #82883c;
+    padding: 0.2em;
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr;
+    grid-template-rows: auto;
+}
+
+.objeto-grid-1{
+    background-color: #c0c95b;
+    border: 0.2em dashed #eef4ad;
+}
+
+.objeto-grid-1:nth-child(1){
+    color: #5f632f;
+    grid-column: 1/4;
+    grid-row: 1;
+}
